@@ -22,7 +22,7 @@ public class WishesClient {
 
         public static void main(String args[]) throws Exception {
 
-                Socket sock = new Socket("127.0.0.1", 5000);//два параметра (адрес сервера и номер порта);
+                Socket sock = new Socket("127.0.0.1", 5000);// два параметра (адрес сервера и номер порта);
 
                 DataObj dataOut = new DataObj( "Hello client!" );
 

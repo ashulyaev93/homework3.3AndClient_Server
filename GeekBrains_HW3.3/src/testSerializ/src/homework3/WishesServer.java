@@ -14,7 +14,7 @@ public class WishesServer {
                 Socket sock = sersock.accept();//привязка соединения по номеру порта;
 
                 InputStream istream = sock.getInputStream();//входной поток для получения сообщений;
-                DataInputStream dstream = new DataInputStream(istream);//т.к InputStream абстрактный связываем с DataInputStream;
+                DataInputStream dstream = new DataInputStream(istream);// т.к InputStream абстрактный связываем с DataInputStream;
 
                 //чтение сообщения с сокета и возврат;
                 String message2 = dstream.readLine();

@@ -19,8 +19,8 @@ public class Main {
     //Задание1. Прочитать файл (около 50 байт) в байтовый массив и вывести этот массив в консоль;
     public static void readFile(String fileName) {
         try {
-            BufferedInputStream in = new BufferedInputStream(new FileInputStream(fileName));
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            BufferedInputStream in = new BufferedInputStream(new FileInputStream(fileName));//буфферизация ввода;
+            ByteArrayOutputStream out = new ByteArrayOutputStream();//вывод в массиве байтов;
 
             int x = in.read();
             while (x != -1) {
